@@ -1,0 +1,13 @@
+[package]
+name = "baremetal-ipc-sockets"
+version = "0.1.0"
+edition = "2021"
+description = "Zero-copy SPSC ring buffer IPC driver over Unix domain sockets"
+license = "MIT"
+
+[dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
